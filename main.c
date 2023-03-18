@@ -34,4 +34,5 @@ int main() {
     perimeter = (height + width) * 2;
     printf("Perimeter: %.2lf", perimeter);
     return 0;
+
 }
