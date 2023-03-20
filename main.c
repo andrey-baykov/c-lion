@@ -1,18 +1,17 @@
 #include <stdio.h>
 
-int asterisks(){
+void asterisks() {
     int count = 0;
     int userInput;
     printf("Enter count of asterisks: ");
     scanf("%d", &userInput);
-    while (count < userInput){
+    while (count < userInput) {
         printf("*");
-        count ++;
+        count++;
     }
-    return 0;
 }
 
-int power(){
+void power() {
     int num, pow, powLog;
     int result = 1;
     printf("Enter number: ");
@@ -21,15 +20,14 @@ int power(){
     scanf("%d", &powLog);
     pow = powLog;
 
-    while (pow > 0){
+    while (pow > 0) {
         result = result * num;
-        pow --;
+        pow--;
     }
     printf("Result: %d ^ %d = %d", num, powLog, result);
-
 }
 
-int doWhile(){
+void doWhile() {
     int userInput;
 
     do {
@@ -37,10 +35,9 @@ int doWhile(){
         scanf("%d", &userInput);
     } while (userInput > 0);
     printf("Buy!\n");
-    return  0;
 }
 
-int forLoop(){
+void forLoop() {
     int number, power, powerLog, result, i;
     printf("Enter number: ");
     scanf("%d", &number);
@@ -48,13 +45,11 @@ int forLoop(){
     scanf("%d", &power);
     powerLog = power;
     result = 1;
-    for (i=0; i < power; i++){
+    for (i = 0; i < power; i++) {
         result = result * number;
     }
 
     printf("Result: %d ^ %d = %d", number, powerLog, result);
-
-    return 0;
 }
 
 int main() {
