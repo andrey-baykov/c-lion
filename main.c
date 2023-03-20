@@ -1,14 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main()
-{
-    char myChar;
-    myChar = ' ';
-    while (myChar != 'q')
-    {
-        printf("Enter character: ");
-        scanf("%c", &myChar);
-        printf("Go again!\n");
+int main() {
+    int count = 0;
+    int userInput;
+    printf("Enter count of asterisks: ");
+    scanf("%d", &userInput);
+    while (count < userInput){
+        printf("*");
+        count ++;
     }
     return 0;
 }
