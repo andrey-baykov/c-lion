@@ -29,9 +29,39 @@ int power(){
 
 }
 
+int doWhile(){
+    int userInput;
+
+    do {
+        printf("Input number: ");
+        scanf("%d", &userInput);
+    } while (userInput > 0);
+    printf("Buy!\n");
+    return  0;
+}
+
+int forLoop(){
+    int number, power, powerLog, result, i;
+    printf("Enter number: ");
+    scanf("%d", &number);
+    printf("Enter power: ");
+    scanf("%d", &power);
+    powerLog = power;
+    result = 1;
+    for (i=0; i < power; i++){
+        result = result * number;
+    }
+
+    printf("Result: %d ^ %d = %d", number, powerLog, result);
+
+    return 0;
+}
+
 int main() {
 //    asterisks();
-    power();
+//    power();
+//    doWhile();
+    forLoop();
     return 0;
 }
 
